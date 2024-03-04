@@ -21,8 +21,8 @@ const Navbar = () => {
   }
 
   return (
-    <div className="absolute w-full">
-      <div className="flex justify-between lg:mx-[120px] py-2 mt-6 px-5 rounded-md border border-gray-400 dark:border-pink-300 backdrop-blur-md">
+    <div className="fixed w-full  ">
+      <div className="flex justify-between lg:mx-[120px] py-2 mt-6 px-5 rounded-md border border-[rgba(0,0,0,0.3)] dark:border-[rgba(255,255,255,0.2)] backdrop-blur-md z-10 ">
         <div>
           <h1 className="text-base font-semibold dark:text-[#fafafa] cursor-pointer ">
             Jr.Gaurav
@@ -30,16 +30,16 @@ const Navbar = () => {
         </div>
         <div className="flex gap-28">
           <div>
-            <p className="font-medium text-[#7FFF00]">open to work</p>
+            <p className=" font-medium text-[#7FFF00] ">open to work</p>
           </div>
-          <ul className="flex gap-1 font-medium cursor-pointer">
+          <ul className="flex gap-1 font-sm cursor-pointer font-medium">
             <li
               className={`nav-item ${
                 hoveredItem === null
-                  ? "text-[#fafafa]"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
                   : hoveredItem === "Experience"
-                  ? "text-[#fafafa]"
-                  : "text-gray-400"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
+                  : "text-gray-200 dark:text-gray-600"
               }`}
               onMouseEnter={() => setHoveredItem("Experience")}
               onMouseLeave={() => setHoveredItem(null)}
@@ -49,10 +49,10 @@ const Navbar = () => {
             <li
               className={`nav-item ${
                 hoveredItem === null
-                  ? "text-[#fafafa]"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
                   : hoveredItem === "Skills"
-                  ? "text-[#fafafa]"
-                  : "text-gray-400"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
+                  : "text-gray-200 dark:text-gray-600"
               }`}
               onMouseEnter={() => setHoveredItem("Skills")}
               onMouseLeave={() => setHoveredItem(null)}
@@ -62,10 +62,10 @@ const Navbar = () => {
             <li
               className={`nav-item ${
                 hoveredItem === null
-                  ? "text-[#fafafa]"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
                   : hoveredItem === "Projects"
-                  ? "text-[#fafafa]"
-                  : "text-gray-400"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
+                  : "text-gray-200 dark:text-gray-600"
               }`}
               onMouseEnter={() => setHoveredItem("Projects")}
               onMouseLeave={() => setHoveredItem(null)}
@@ -75,10 +75,10 @@ const Navbar = () => {
             <li
               className={`nav-item ${
                 hoveredItem === null
-                  ? "text-[#fafafa]"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
                   : hoveredItem === "About"
-                  ? "text-[#fafafa]"
-                  : "text-gray-400"
+                  ? "text-[#1e1e1e] dark:text-[#fafafa]"
+                  : "text-gray-200 dark:text-gray-600"
               }`}
               onMouseEnter={() => setHoveredItem("About")}
               onMouseLeave={() => setHoveredItem(null)}
