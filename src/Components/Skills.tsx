@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="w-full p-5 skill text-white border-2 border-dashed border-[rgba(255,255,255,0.4)] rounded-[20px] mt-[30px]">
+    <div className="w-full p-5 skill text-white border-2 border-dashed backdrop-blur-xl border-[rgba(255,255,255,0.4)] rounded-[20px] mt-[30px]">
       <h1 className="text-2xl font-medium">Forontend :-</h1>
       <div className="flex  flex-wrap gap-x-4 gap-y-3 text-sm font-medium mt-[10px]">
         <p className="px-3 py-1 bg-[#2ECC71] rounded-[6px]">HTML</p>
