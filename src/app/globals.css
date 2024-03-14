@@ -7,3 +7,29 @@
     text-wrap: balance;
   }
 }
+
+::-webkit-scrollbar {
+  width: 1vw;
+  padding: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-block: 10px;
+}
+
+.main {
+  background: linear-gradient(
+    104.35deg,
+    rgba(30, 30, 30, 0.3) 3.7%,
+    rgba(30, 30, 30, 0.1) 96.28%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px);
+  /* box-shadow: 0 8px 32px 0 rgba(0, 0, 00.37); */
+}
